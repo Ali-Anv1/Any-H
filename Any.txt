@@ -318,11 +318,11 @@ proxies:
     tls: true
     udp: true
     client-fingerprint: chrome
-    servername: any.arista2025.workers.dev
+    servername: azadnet-4n9.pages.dev
     ws-opts:
       path: "/ed=2560?/"
       headers:
-        Host: any.arista2025.workers.dev
+        Host: azadnet-4n9.pages.dev
 # --- پراکسی‌های زنجیره‌ای با استفاده از dialer-proxy ---
   - name: "🇺🇸-DR-Anv- § 0"
     type: ss
