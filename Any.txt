@@ -309,6 +309,15 @@ proxies:
     server: 127.0.0.1
     port: 10808
 
+  - name: "🇩🇪 anytls-443"
+    type: anytls
+    server: 80.240.26.147
+    port: 443
+    password: "qzJvszJHOB"
+    tls: true
+    sni: "suiany.makingirangreatagain.com"
+    servername: "suiany.makingirangreatagain.com"
+    dialer-proxy: "GATEWAY"
 
   - name: "VLESS-Entry"
     type: vless
@@ -332,15 +341,6 @@ proxies:
     cipher: aes-128-gcm
     password: "shadowsocks"
     dialer-proxy: "VLESS-Entry"
-  - name: "🇩🇪 anytls-443"
-    type: anytls
-    server: 80.240.26.147
-    port: 443
-    password: "qzJvszJHOB"
-    tls: true
-    sni: "suiany.makingirangreatagain.com"
-    servername: "suiany.makingirangreatagain.com"
-    dialer-proxy: "GATEWAY"
   - name: "Dr-Anv-🇮🇷"
     type: ss
     server: 193.29.139.191
