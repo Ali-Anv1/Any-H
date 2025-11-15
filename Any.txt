@@ -1892,6 +1892,7 @@ proxy-groups:
     type: select
     proxies:
       - "Dr-Anv-🇮🇷"
+      - "🇩🇪 anytls-443"
       - "🇺🇸-DR-Anv- § 0"
       - "🇵🇾-DR-Anv- § 1"
       - "🇬🇧-DR-Anv- § 2"
