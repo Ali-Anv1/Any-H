@@ -309,16 +309,6 @@ proxies:
     server: 127.0.0.1
     port: 10808
 
-  - name: "🇩🇪 anytls-443"
-    type: anytls
-    server: 80.240.26.147
-    port: 443
-    password: "qzJvszJHOB"
-    tls: true
-    sni: "suiany.makingirangreatagain.com"
-    servername: "suiany.makingirangreatagain.com"
-    dialer-proxy: "GATEWAY"
-
   - name: "VLESS-Entry"
     type: vless
     server: 185.135.9.17
@@ -328,11 +318,11 @@ proxies:
     tls: true
     udp: true
     client-fingerprint: chrome
-    servername: azadnet-4n9.pages.dev
+    servername: any.arista2025.workers.dev
     ws-opts:
       path: "/ed=2560?/"
       headers:
-        Host: azadnet-4n9.pages.dev
+        Host: any.arista2025.workers.dev
 # --- پراکسی‌های زنجیره‌ای با استفاده از dialer-proxy ---
   - name: "🇺🇸-DR-Anv- § 0"
     type: ss
@@ -340,6 +330,15 @@ proxies:
     port: 443
     cipher: aes-128-gcm
     password: "shadowsocks"
+    dialer-proxy: "VLESS-Entry"
+  - name: "🇩🇪 anytls-443"
+    type: anytls
+    server: 80.240.26.147
+    port: 443
+    password: "qzJvszJHOB"
+    tls: true
+    sni: "suiany.makingirangreatagain.com"
+    servername: "suiany.makingirangreatagain.com"
     dialer-proxy: "VLESS-Entry"
   - name: "Dr-Anv-🇮🇷"
     type: ss
